@@ -1,0 +1,16 @@
+C:\Users\dened\RiderProjects\BankAppWFFramework4.8.1\BankAppWFFramework4.8.1\bin\Debug\BankAppWFFramework4._8._1.exe.config
+C:\Users\dened\RiderProjects\BankAppWFFramework4.8.1\BankAppWFFramework4.8.1\bin\Debug\BankAppWFFramework4._8._1.exe
+C:\Users\dened\RiderProjects\BankAppWFFramework4.8.1\BankAppWFFramework4.8.1\bin\Debug\BankAppWFFramework4._8._1.pdb
+C:\Users\dened\RiderProjects\BankAppWFFramework4.8.1\BankAppWFFramework4.8.1\obj\Debug\BankAppWFFramework4.8.1.csproj.AssemblyReference.cache
+C:\Users\dened\RiderProjects\BankAppWFFramework4.8.1\BankAppWFFramework4.8.1\obj\Debug\BankAppWFFramework4.8.1.csproj.SuggestedBindingRedirects.cache
+C:\Users\dened\RiderProjects\BankAppWFFramework4.8.1\BankAppWFFramework4.8.1\obj\Debug\BankAppWFFramework4._8._1.Properties.Resources.resources
+C:\Users\dened\RiderProjects\BankAppWFFramework4.8.1\BankAppWFFramework4.8.1\obj\Debug\BankAppWFFramework4.8.1.csproj.GenerateResource.cache
+C:\Users\dened\RiderProjects\BankAppWFFramework4.8.1\BankAppWFFramework4.8.1\obj\Debug\BankAppWFFramework4.8.1.csproj.CoreCompileInputs.cache
+C:\Users\dened\RiderProjects\BankAppWFFramework4.8.1\BankAppWFFramework4.8.1\obj\Debug\BankAppWFFramework4._8._1.exe
+C:\Users\dened\RiderProjects\BankAppWFFramework4.8.1\BankAppWFFramework4.8.1\obj\Debug\BankAppWFFramework4._8._1.pdb
+C:\Users\dened\RiderProjects\BankAppWFFramework4.8.1\BankAppWFFramework4.8.1\obj\Debug\BankAppWFFramework4._8._1.Form1.resources
+C:\Users\dened\RiderProjects\BankAppWFFramework4.8.1\BankAppWFFramework4.8.1\bin\Debug\Newtonsoft.Json.dll
+C:\Users\dened\RiderProjects\BankAppWFFramework4.8.1\BankAppWFFramework4.8.1\bin\Debug\Newtonsoft.Json.xml
+C:\Users\dened\RiderProjects\BankAppWFFramework4.8.1\BankAppWFFramework4.8.1\obj\Debug\BankAppWFFramework4.8.1.csproj.CopyComplete
+C:\Users\dened\RiderProjects\BankAppWFFramework4.8.1\BankAppWFFramework4.8.1\obj\Debug\BankAppWFFramework4._8._1.AccountBrowser.resources
+C:\Users\dened\RiderProjects\BankAppWFFramework4.8.1\BankAppWFFramework4.8.1\obj\Debug\BankAppWFFramework4._8._1.UserRegisterForm.resources

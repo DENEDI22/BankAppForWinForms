@@ -1,0 +1,85 @@
+﻿using System;
+using System.Collections.Generic;
+using Newtonsoft.Json;
+
+namespace BankServerApp;
+
+[Serializable]
+public class Account
+{
+    public string accountName { get; }
+    public int balance { get; private set; }
+    public string securityKey { get; private set; }
+    public List<ulong> loggedInDeviceIDs { get; private set; }
+
+    private List<Transaction> allTransactions = new List<Transaction>();
+    
+    [JsonConstructor]
+    public Account(string AccountName, int Balance, string SecurityKey, List<ulong> LoggedInDeviceIDs)
+    {
+        accountName = AccountName;
+        balance = Balance;
+        securityKey = SecurityKey;
+        loggedInDeviceIDs = LoggedInDeviceIDs;
+    }
+
+    public Account(string _accountName, string _securityKey)
+    {
+        accountName = _accountName;
+        securityKey = _securityKey;
+        loggedInDeviceIDs = new List<ulong>();
+    }
+
+    public void RollbackTransaction(Transaction _transaction)
+    {
+        if (allTransactions.Remove(_transaction))
+        {
+            balance += _transaction.transactionAmount;
+        }
+    }
+
+    public bool TryLogIn(string _securityKey, ulong _deviceID)
+    {
+        if (loggedInDeviceIDs.Contains(_deviceID)) return true;
+        if (_securityKey == securityKey)
+        {
+            loggedInDeviceIDs.Add(_deviceID);
+            return true;
+        }
+
+        return false;
+    }
+
+    public Transaction[] Transactions(ulong _deviceID)
+    {
+        if (loggedInDeviceIDs.Contains(_deviceID))
+        {
+            return allTransactions.ToArray();
+        }
+
+        return null;
+    }
+
+    /// <summary>
+    /// returns 0 if transaction is successful. 
+    /// returns 1 if there is not enough money. 
+    /// returns 2 if sender or receiver account name is invalid. 
+    /// </summary>
+    /// <param name="_newTransaction">Transaction to process</param>
+    /// <returns></returns>
+    public int ProcessTransaction(Transaction _newTransaction)
+    {
+        if (_newTransaction.senderAccountName == accountName)
+        {
+            if (balance - _newTransaction.transactionAmount > 0) balance -= _newTransaction.transactionAmount;
+            else return 1;
+        }
+        else if (_newTransaction.recieverAccountName == accountName)
+        {
+            balance += _newTransaction.transactionAmount;
+        }
+        else return 2;
+
+        return 0;
+    }
+}
