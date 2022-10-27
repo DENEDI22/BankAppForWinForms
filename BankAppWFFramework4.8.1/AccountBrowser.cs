@@ -23,7 +23,9 @@ public partial class AccountBrowser : Form
 
     private void timer1_Elapsed(object sender, ElapsedEventArgs e)
     {
+        UpdateAccountInfo();
         UpdateTransactionsList();
+        timer1.AutoReset = true;
     }
 
     private void UpdateTransactionsList()
@@ -115,6 +117,7 @@ public partial class AccountBrowser : Form
             default:
                 throw new ArgumentOutOfRangeException();
         }
+
         textBox1.Text = String.Empty;
         textBox2.Text = String.Empty;
     }

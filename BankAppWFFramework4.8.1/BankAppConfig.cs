@@ -5,7 +5,7 @@ namespace BankApp
 {
     public class BankAppConfig
     {
-        public const string bankServiceLink = "https://localhost:7209/BankServer";
+        public const string bankServiceLink = "https://26.18.53.143:7209/BankServer";
         public Int64 clientID;
         public string currentAccountName;
 

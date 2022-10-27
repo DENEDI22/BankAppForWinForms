@@ -14,11 +14,11 @@ namespace BankAppWFFramework4._8._1
         [STAThread]
         static void Main()
         {
+            System.Net.ServicePointManager.ServerCertificateValidationCallback +=
+                (s, cert, chain, sslPolicyErrors) => true;
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
         }
     }
-    
-    
 }
